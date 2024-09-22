@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "donutmod",
+	"version": "${version}",
+	"name": "Donut Mod",
+	"description": "This is a mod that adds donuts!!!!!!",
+	"authors": [
+		"Me!",
+		"Me Again!"
+	],
+	"contact": {
+		"homepage": "https://github.com/gamekiller2073/DonutMod/",
+		"sources": "https://github.com/gamekiller2073/DonutMod/"
+	},
+	"license": "MIT",
+	"icon": "assets/donutmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.guus.donutmod.DonutMod"
+		],
+		"fabric-datagen": [
+			"net.guus.donutmod.DonutModDataGenerator"
+		],
+		"client": [
+			"net.guus.donutmod.DonutModClient"
+		]
+	},
+	"mixins": [
+		"donutmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
